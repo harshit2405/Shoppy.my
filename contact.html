@@ -1,0 +1,190 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<meta charset="UTF-8">
+        <title>Account - Shopp.my</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>    
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+     
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+</style>    
+</head>    
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/download.png" width="150px">
+            </div>
+            <nav>
+                <ul id = "MenuItems">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                 </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    
+<h2>Contact Us </h2>    
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div> 
+<div class="footer">
+    <div class="container">
+     <div class="row">
+         <div class="footer-col-1">
+             <h3>Dowload Our App</h3>
+             <p>Download App for Android and ios mobile phone</p>
+             <div class="logo">
+                 <img src="images/play-store.png">
+                 <img src="images/app-store.png">
+             </div>
+         </div>
+         <div class="footer-col-2">
+             <img src="images/download.png">
+             <p>Our Purpose Is To Make the Pleasure and Benifits Of Good Clothing to everybody</p>
+         </div>
+         <div class="footer-col-3">
+             <h3>Useful Links</h3>
+             <ul>
+               <li>Coupons</li>
+               <li>Blogs</li>
+               <li>Return Policy</li>
+               <li>Join Affliate</li>
+             </ul>
+         </div>
+         <div class="footer-col-4">
+             <h3>Useful Links</h3>
+             <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>Youtube</li>
+             </ul>
+         </div>
+     </div>
+     <hr>
+     <p class="copyright">Copyright 2020 - Harshit Purwar</p>
+ </div>
+ 
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle()
+    {
+        if( MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+    
+</body>    
+</html> 
